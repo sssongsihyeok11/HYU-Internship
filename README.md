@@ -23,7 +23,11 @@ git clone https://github.com/openfheorg/openfhe-python.git
 cd openfhe-development
 mkdir build
 cd build
+```
+```bash
 cmake .. -DCMAKE_INSTALL_PREFIX=$VIRTUAL_ENV -DWITH_OPENMP=ON
+```
+```bash
 make -j6
 make install
 ```
@@ -32,9 +36,18 @@ make install
 
 ```bash
 cd ~/intern/openfhe-python
+```
+```bash
 mkdir build
 cd build
-cmake .. -DCMAKE_PREFIX_PATH=$VIRTUAL_ENV -DCMAKE_INSTALL_PREFIX=$VIRTUAL_ENV
+```
+```bash
+cmake .. \
+  -DCMAKE_PREFIX_PATH=$VIRTUAL_ENV \
+  -DCMAKE_INSTALL_PREFIX=$VIRTUAL_ENV \
+  -Dpybind11_DIR=$(python3 -m pybind11 --cmakedir)
+```
+```bash
 make -j6
 make install
 ```

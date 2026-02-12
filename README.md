@@ -2,11 +2,12 @@
 
 **Understand basic homomorphic encryption operations**
 
-## 1. Install venv
+## 1. Install venv and pybind11
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
+pip install pybind11
 ```
 
 ## 2. Clone repositories

@@ -2,6 +2,10 @@
 
 **Understand basic homomorphic encryption operations**
 
+## 0. Open ssh configuration file
+
+https://wp.ecomong.net/visual-studio-code-remote-ssh-%EC%84%A4%EC%A0%95-%EB%B0%A9%EB%B2%95/
+
 ## 1. Install venv and pybind11
 
 ```bash

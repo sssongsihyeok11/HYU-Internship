@@ -71,7 +71,7 @@ def main():
     input_vec = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
     encoded_length = len(input_vec)
 
-    coefficients = [1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1]
+    coefficients = [1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 1, 1] #1 + x^3 + x^6 + x^10 + x^11 +  x^14 + x^15
 
     plaintext = cc.MakeCKKSPackedPlaintext(input_vec)
     ciphertext = cc.Encrypt(key_pair.publicKey, plaintext)
